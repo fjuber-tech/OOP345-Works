@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+# Ignore Visual Studio folders
+.vs/
+*.vcxproj.user
+*.suo
+*.user
+*.cache
+*.vscode/
+
