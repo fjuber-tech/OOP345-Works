@@ -38,3 +38,15 @@
 *.cache
 *.vscode/
 
+# Visual Studio files to ignore
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vcxproj.filters
+*.VC.db
+*.vscode/
+*.log
+
+
