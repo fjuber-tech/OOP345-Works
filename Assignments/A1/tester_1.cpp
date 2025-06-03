@@ -1,3 +1,19 @@
+/*
+////////////////////////////////////////////////////////////////////////
+Assignment 1
+Full Name	: Fairooz Juber
+Student ID# : 102907243
+Email		: fjuber@myseneca.ca
+Date		: 2025 - 05 - 31
+Section		: NEE
+
+Authenticity Declaration :
+I declare that this submission is the result of my own work and I only copied the code
+that my professor provided to complete my assignments. This submitted piece of work
+has not been shared with any other student or 3rd party content provider.
+/////////////////////////////////////////////////////////////////////////
+*/
+
 #include <iostream>
 #include <iomanip>
 #include "dictionary.h"
@@ -11,19 +27,19 @@
 
 // Cheching if header guards exist and follow convention.
 #ifndef SENECA_DICTIONARY_H
-    #error "The header guard for 'dictionary.h' doesn't follow the convention!"
+#error "The header guard for 'dictionary.h' doesn't follow the convention!"
 #endif
 #ifndef SENECA_SETTINGS_H
-    #error "The header guard for 'settings.h' doesn't follow the convention!"
+#error "The header guard for 'settings.h' doesn't follow the convention!"
 #endif
 #ifndef SENECA_TIMEMONITOR_H
-    #error "The header guard for 'timeMonitor.h' doesn't follow the convention!"
+#error "The header guard for 'timeMonitor.h' doesn't follow the convention!"
 #endif
 #ifndef SENECA_EVENT_H
-    #error "The header guard for 'event.h' doesn't follow the convention!"
+#error "The header guard for 'event.h' doesn't follow the convention!"
 #endif
 #ifndef SENECA_LOGGER_H
-    #error "The header guard for 'logger.h' doesn't follow the convention!"
+#error "The header guard for 'logger.h' doesn't follow the convention!"
 #endif
 
 int cout = 0; // won't compile if headers don't follow convention regarding namespaces
@@ -119,7 +135,7 @@ int main(int argc, char** argv)
 		std::cout << "==========:==========:==========:==========:==========\n";
 
 		seneca::Dictionary dict1 = dict; // make a copy of the bif dictionary
-		
+
 		timer.startEvent("Move Constructor");
 		seneca::Dictionary dict2 = std::move(dict1);
 		log.addEvent(timer.stopEvent());

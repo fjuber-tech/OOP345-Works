@@ -1,3 +1,19 @@
+/*
+////////////////////////////////////////////////////////////////////////
+Assignment 1
+Full Name	: Fairooz Juber
+Student ID# : 102907243
+Email		: fjuber@myseneca.ca
+Date		: 2025 - 05 - 31
+Section		: NEE
+
+Authenticity Declaration :
+I declare that this submission is the result of my own work and I only copied the code 
+that my professor provided to complete my assignments. This submitted piece of work 
+has not been shared with any other student or 3rd party content provider.
+/////////////////////////////////////////////////////////////////////////
+*/
+
 #include "dictionary.h"
 #include "settings.h"
 #include <fstream>
@@ -125,9 +141,8 @@ namespace seneca {
     }
 
     // Searches for a word and prints its definitions
-    void Dictionary::searchWord(const char* word) const {
+    /*void Dictionary::searchWord(const char* word) const {
         string query = word;
-        bool found = false;
         size_t printed = 0;
 
         for (size_t i = 0; i < m_count; ++i) {
@@ -155,7 +170,6 @@ namespace seneca {
                 if (!g_settings.m_show_all)
                     return;
 
-                found = true;
             }
         }
 
@@ -163,7 +177,44 @@ namespace seneca {
         if (printed == 0) {
             cout << "Word '" << word << "' was not found in the dictionary." << endl;
         }
+    }*/
+
+    void Dictionary::searchWord(const char* word) const {
+        std::string query = word;
+        size_t printed = 0;
+
+        for (size_t i = 0; i < m_count; ++i) {
+            if (m_words[i].m_word == query) {
+                // First match prints the word, others are indented
+                if (printed == 0) {
+                    std::cout << m_words[i].m_word;
+                }
+                else {
+                    std::cout << std::string(query.length(), ' ');
+                }
+
+                // Show part of speech if verbose is enabled and POS is known
+                if (g_settings.m_verbose && m_words[i].m_pos != PartOfSpeech::Unknown) {
+                    std::cout << " - (" << to_string(m_words[i].m_pos) << ") ";
+                }
+                else {
+                    std::cout << " - ";
+                }
+
+                std::cout << m_words[i].m_definition << std::endl;
+                ++printed;
+
+                if (!g_settings.m_show_all)
+                    return;
+            }
+        }
+
+        // If nothing was printed
+        if (printed == 0) {
+            std::cout << "Word '" << word << "' was not found in the dictionary." << std::endl;
+        }
     }
+
 
     // Converts PartOfSpeech enum to lowercase string
     string to_string(PartOfSpeech pos) {
