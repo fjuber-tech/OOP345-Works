@@ -1,0 +1,149 @@
+Script started on Sun 08 Jun 2025 07:02:28 PM EDT
+==198819== Memcheck, a memory error detector
+==198819== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==198819== Using Valgrind-3.21.0 and LibVEX; rerun with -h for copyright info
+==198819== Command: asgn
+==198819== 
+[38;5;9mBegin Testing the Program!
+--------------------------[0m
+
+Command Line:
+------------------------------------------------------
+  1: asgn
+------------------------------------------------------
+
+T1: Building the Teams of Characters
+==========:==========:==========:==========:==========
+[Team] The Procrastinators
+    1: Quick Silver            Health: 105% (1000/ 950)  Attack:   58  Defense:   77
+    2: Rogue Ronin             Health:   0% (   0/ 800)  Attack:   75  Defense:   50
+    3: Lethal Bunny            Health: 100% (1000/1000)  Attack:  260  Defense:  133
+    4: Master Chief            Health:   0% (   0/1000)  Attack:  121  Defense:   10
+    5: Mecha Doom              Health:   1% (   1/ 100)  Attack:   55  Defense:    0
+[Team] The King's Guard
+    1: Ghost Blade             Health:   5% (   1/  20)  Attack:   35  Defense:    1
+    2: Nova Burst              Health:  81% (1000/1234)  Attack:  195  Defense:  147
+    3: Kill Switch             Health:  50% (1000/2000)  Attack:  288  Defense:   80
+    4: Mercy Less              Health:   0% (   0/1200)  Attack:  102  Defense:    8
+    5: Flame Princess          Health:   0% (   0/ 100)  Attack:  120  Defense:  100
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T2: Increased Health for Guild Members
+==========:==========:==========:==========:==========
+[Team] The Procrastinators
+    1: Quick Silver            Health: 105% (1000/ 950)  Attack:   58  Defense:   77
+    2: Rogue Ronin             Health:   0% (   0/1100)  Attack:   75  Defense:   50
+    3: Lethal Bunny            Health:  76% (1000/1300)  Attack:  260  Defense:  133
+    4: Master Chief            Health:   0% (   0/1000)  Attack:  121  Defense:   10
+    5: Mecha Doom              Health:   1% (   1/ 100)  Attack:   55  Defense:    0
+[Guild] Spartans
+    1: Lethal Bunny            Health:  76% (1000/1300)  Attack:  260  Defense:  133
+    2: Rogue Ronin             Health:   0% (   0/1100)  Attack:   75  Defense:   50
+    3: Flame Princess          Health:   0% (   0/ 400)  Attack:  120  Defense:  100
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T3: One Guild Member Leaves Guild
+==========:==========:==========:==========:==========
+[Team] The Procrastinators
+    1: Quick Silver            Health: 105% (1000/ 950)  Attack:   58  Defense:   77
+    2: Rogue Ronin             Health:   0% (   0/1100)  Attack:   75  Defense:   50
+    3: Lethal Bunny            Health: 100% (1000/1000)  Attack:  260  Defense:  133
+    4: Master Chief            Health:   0% (   0/1000)  Attack:  121  Defense:   10
+    5: Mecha Doom              Health:   1% (   1/ 100)  Attack:   55  Defense:    0
+[Guild] Spartans
+    1: Rogue Ronin             Health:   0% (   0/1100)  Attack:   75  Defense:   50
+    2: Flame Princess          Health:   0% (   0/ 400)  Attack:  120  Defense:  100
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T4: Check Copy Constructor in Team
+==========:==========:==========:==========:==========
+[Team] The Procrastinators
+    1: Quick Silver            Health: 105% (1000/ 950)  Attack:   58  Defense:   77
+    2: Rogue Ronin             Health:   0% (   0/1100)  Attack:   75  Defense:   50
+    3: Lethal Bunny            Health: 100% (1000/1000)  Attack:  260  Defense:  133
+    4: Master Chief            Health:   0% (   0/1000)  Attack:  121  Defense:   10
+    5: Mecha Doom              Health:   1% (   1/ 100)  Attack:   55  Defense:    0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T5: Check Copy Assignment Operator in Team
+==========:==========:==========:==========:==========
+[Team] The Procrastinators
+    1: Quick Silver            Health: 105% (1000/ 950)  Attack:   58  Defense:   77
+    2: Rogue Ronin             Health:   0% (   0/1100)  Attack:   75  Defense:   50
+    3: Lethal Bunny            Health: 100% (1000/1000)  Attack:  260  Defense:  133
+    4: Master Chief            Health:   0% (   0/1000)  Attack:  121  Defense:   10
+    5: Mecha Doom              Health:   1% (   1/ 100)  Attack:   55  Defense:    0
+[Team] The King's Guard
+    1: Ghost Blade             Health:   5% (   1/  20)  Attack:   35  Defense:    1
+    2: Nova Burst              Health:  81% (1000/1234)  Attack:  195  Defense:  147
+    3: Kill Switch             Health:  50% (1000/2000)  Attack:  288  Defense:   80
+    4: Mercy Less              Health:   0% (   0/1200)  Attack:  102  Defense:    8
+    5: Flame Princess          Health:   0% (   0/ 400)  Attack:  120  Defense:  100
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T6: Check the Move Operations in Team
+==========:==========:==========:==========:==========
+No team.
+[Team] The Procrastinators
+    1: Quick Silver            Health: 105% (1000/ 950)  Attack:   58  Defense:   77
+    2: Rogue Ronin             Health:   0% (   0/1100)  Attack:   75  Defense:   50
+    3: Lethal Bunny            Health: 100% (1000/1000)  Attack:  260  Defense:  133
+    4: Master Chief            Health:   0% (   0/1000)  Attack:  121  Defense:   10
+    5: Mecha Doom              Health:   1% (   1/ 100)  Attack:   55  Defense:    0
+[Team] The Procrastinators
+    1: Quick Silver            Health: 105% (1000/ 950)  Attack:   58  Defense:   77
+    2: Rogue Ronin             Health:   0% (   0/1100)  Attack:   75  Defense:   50
+    3: Lethal Bunny            Health: 100% (1000/1000)  Attack:  260  Defense:  133
+    4: Master Chief            Health:   0% (   0/1000)  Attack:  121  Defense:   10
+    5: Mecha Doom              Health:   1% (   1/ 100)  Attack:   55  Defense:    0
+No team.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T7: Check Copy Constructor in Guild
+==========:==========:==========:==========:==========
+[Guild] Spartans
+    1: Rogue Ronin             Health:   0% (   0/1100)  Attack:   75  Defense:   50
+    2: Flame Princess          Health:   0% (   0/ 400)  Attack:  120  Defense:  100
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T8: Check Copy Assignment Operator in Guild
+==========:==========:==========:==========:==========
+[Guild] Spartans
+    1: Rogue Ronin             Health:   0% (   0/1100)  Attack:   75  Defense:   50
+    2: Flame Princess          Health:   0% (   0/ 400)  Attack:  120  Defense:  100
+No guild.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T9: Check the Move Operations in Guild
+==========:==========:==========:==========:==========
+No guild.
+[Guild] Spartans
+    1: Rogue Ronin             Health:   0% (   0/1100)  Attack:   75  Defense:   50
+    2: Flame Princess          Health:   0% (   0/ 400)  Attack:  120  Defense:  100
+[Guild] Spartans
+    1: Rogue Ronin             Health:   0% (   0/1100)  Attack:   75  Defense:   50
+    2: Flame Princess          Health:   0% (   0/ 400)  Attack:  120  Defense:  100
+No guild.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T10: Epic battle between Master Chief and Mercy Less
+==========:==========:==========:==========:==========
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T11: Epic battle between Master Chief and Mercy Less
+==========:==========:==========:==========:==========
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+[38;5;9m------------------------
+End Testing the Program![0m
+==198819== 
+==198819== HEAP SUMMARY:
+==198819==     in use at exit: 0 bytes in 0 blocks
+==198819==   total heap usage: 80 allocs, 80 frees, 79,949 bytes allocated
+==198819== 
+==198819== All heap blocks were freed -- no leaks are possible
+==198819== 
+==198819== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Sun 08 Jun 2025 07:02:31 PM EDT
